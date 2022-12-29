@@ -5,7 +5,7 @@
 int FunctionAnkerman(int M, int N)
 {
     if(M == 0) return N + 1;
-    if(M != 0 & N == 0) return FunctionAnkerman(M-1,1);
+    if(M > 0 & N == 0) return FunctionAnkerman(M-1,1);
     else return FunctionAnkerman(M-1,FunctionAnkerman(M,N-1));
     
 }

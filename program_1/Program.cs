@@ -6,7 +6,7 @@
 string NaturalNumber(int numb)
 {
     if(numb == 1) return numb.ToString();
-    else return (numb + " " + NaturalNumber(numb-1));
+    else return (numb + ", " + NaturalNumber(numb-1));
 }
 int EnterData(string text)
 {
